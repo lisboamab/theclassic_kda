@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nickname: MyString
+  kills: 1
+  deaths: 1
+  guild: one
+  character_classes: 1
+
+two:
+  nickname: MyString
+  kills: 1
+  deaths: 1
+  guild: two
+  character_classes: 1
