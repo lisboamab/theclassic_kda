@@ -1,0 +1,11 @@
+<% content_for :title, "New kill event" %>
+
+<h1>New kill event</h1>
+
+<%= render "form", kill_event: @kill_event %>
+
+<br>
+
+<div>
+  <%= link_to "Back to kill events", kill_events_path %>
+</div>

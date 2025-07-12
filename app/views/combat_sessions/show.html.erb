@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @combat_session %>
+
+<div>
+  <%= link_to "Edit this combat session", edit_combat_session_path(@combat_session) %> |
+  <%= link_to "Back to combat sessions", combat_sessions_path %>
+
+  <%= button_to "Destroy this combat session", @combat_session, method: :delete %>
+</div>

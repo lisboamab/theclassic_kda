@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @kill_event %>
+
+<div>
+  <%= link_to "Edit this kill event", edit_kill_event_path(@kill_event) %> |
+  <%= link_to "Back to kill events", kill_events_path %>
+
+  <%= button_to "Destroy this kill event", @kill_event, method: :delete %>
+</div>

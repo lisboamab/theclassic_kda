@@ -1,0 +1,32 @@
+<%= form_with(model: kill_event) do |form| %>
+  <% if kill_event.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(kill_event.errors.count, "error") %> prohibited this kill_event from being saved:</h2>
+
+      <ul>
+        <% kill_event.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :combat_session_id, style: "display: block" %>
+    <%= form.text_field :combat_session_id %>
+  </div>
+
+  <div>
+    <%= form.label :killer_id, style: "display: block" %>
+    <%= form.text_field :killer_id %>
+  </div>
+
+  <div>
+    <%= form.label :victim_id, style: "display: block" %>
+    <%= form.text_field :victim_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,12 @@
+<% content_for :title, "Editing combat session" %>
+
+<h1>Editing combat session</h1>
+
+<%= render "form", combat_session: @combat_session %>
+
+<br>
+
+<div>
+  <%= link_to "Show this combat session", @combat_session %> |
+  <%= link_to "Back to combat sessions", combat_sessions_path %>
+</div>

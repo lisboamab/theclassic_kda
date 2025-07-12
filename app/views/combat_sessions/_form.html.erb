@@ -1,0 +1,32 @@
+<%= form_with(model: combat_session) do |form| %>
+  <% if combat_session.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(combat_session.errors.count, "error") %> prohibited this combat_session from being saved:</h2>
+
+      <ul>
+        <% combat_session.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :started_at, style: "display: block" %>
+    <%= form.datetime_field :started_at %>
+  </div>
+
+  <div>
+    <%= form.label :ended_at, style: "display: block" %>
+    <%= form.datetime_field :ended_at %>
+  </div>
+
+  <div>
+    <%= form.label :executed_on, style: "display: block" %>
+    <%= form.date_field :executed_on %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
