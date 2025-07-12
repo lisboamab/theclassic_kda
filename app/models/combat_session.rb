@@ -1,0 +1,2 @@
+class CombatSession < ApplicationRecord
+end
