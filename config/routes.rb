@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :kill_events
+  resources :combat_sessions
   resources :players
   resources :guilds
   resource :session
